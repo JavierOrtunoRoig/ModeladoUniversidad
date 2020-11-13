@@ -1,0 +1,184 @@
+reset
+
+-- instancias
+
+!new Universidad('UCA')
+!new Universidad('UCO')
+!new Universidad('UGR')
+!UCA.nombre := "UCA"
+!UCO.nombre := "UCO"
+!UGR.nombre := "UGR"
+
+!new Clock "reloj1"
+!new Clock "reloj2"
+!new Clock "reloj3"
+!new Clock "reloj4"
+!reloj1.time := 0
+!reloj2.time := 0
+!reloj3.time := 0
+!reloj4.time := 0
+
+!new Persona('Alberto')
+!new Persona('Alvaro')
+!new Persona('Raul')
+!new Persona('David')
+!new Persona('Ivan')
+!new Persona('Aitor')
+!new Persona('Yerai')
+!new Persona('Ana')
+!new Persona('Laura')
+!new Persona('Paula')
+!new Persona('Javier')
+!new Persona('Ainhoa')
+!new Persona('Pepe')
+
+!new Grado('IngenieriaSoftware')
+!new Grado('IngenieriaElectrica')
+!new Grado('IngenieriaComputadores')
+!new Grado('ADE')
+!IngenieriaSoftware.nombre := "Ingeniería de Software"
+!IngenieriaSoftware.numCursos := 4
+!IngenieriaElectrica.nombre := "Ingeniería Electrica"
+!IngenieriaElectrica.numCursos := 4
+!IngenieriaComputadores.nombre := "Ingeniería de Computadores"
+!IngenieriaComputadores.numCursos := 4
+!ADE.nombre := "Administración y Dirección de Empresas"
+!ADE.numCursos := 4
+
+!new Posgrado('IA')
+!new Posgrado('ITSS')
+!IA.nombre := "Inteligencia Artificial"
+!IA.numCursos := 1
+!ITSS.nombre := "Ingeniería y Tecnología de Sistemas Software"
+!ITSS.numCursos := 1
+
+!new Asignatura ('Calculo')
+!new Asignatura ('POO')
+!new Asignatura ('Electronica')
+!new Asignatura ('Modelado')
+!new Asignatura ('Estadistica')
+!new Asignatura ('BD') 
+!new Asignatura ('MatematicasEmpresariales')
+
+!new AsignaturaPropia('CalculoPropia')
+!new AsignaturaPropia('POOPropia')
+!new AsignaturaPropia('ElectronicaPropia')
+!new AsignaturaPropia('ModeladoPropia')
+!new AsignaturaPropia('EstadisticaPropia')
+!new AsignaturaPropia('BDPropia')
+!new AsignaturaPropia('MatematicasEmpresarialesPropia')
+!CalculoPropia.asignaturaComun := Calculo
+!CalculoPropia.creditos := 6
+!CalculoPropia.codigo := 106
+!POOPropia.asignaturaComun := POOPropia
+!POOPropia.codigo := 103
+!POOPropia.creditos := 6
+!ElectronicaPropia.asignaturaComun := Electronica
+!ElectronicaPropia.codigo := 104
+!ElectronicaPropia.creditos := 6
+!ModeladoPropia.asignaturaComun := Modelado
+!ModeladoPropia.creditos := 6
+!Modelado.codigo := 303
+!EstadisticaPropia.asignaturaComun := Estadistica
+!EstadisticaPropia.codigo := 108
+!EstadisticaPropia.creditos := 6
+!BDPropia.asignaturaComun := BD
+!BDPropia.codigo := 205
+!BDPropia.creditos := 6
+
+!new Matriculacion('matriculaAlbertoCalculo')
+!new Matriculacion('matriculaAlvaroPOO')
+!new Matriculacion('matriculaRaulElectronica')
+!new Matriculacion('matriculaDavidModelado')
+!new Matriculacion('matriculaIvanEstadistica')
+!new Matriculacion('matriculaAnaBD')
+
+
+!new Titulo('TituloIngenieriaSoftware')
+!new Titulo('TituloIngenieriaElectrica')
+!new Titulo('TituloIngenieriaComputadores')
+!new Titulo('TituloADE')
+!new Titulo('TituloIA')
+!new Titulo('TituloITSS')
+
+!new EjemplarTitulo('EjemplarTituloIngenieriaSoftware')
+!new EjemplarTitulo('EjemplarTituloIngenieriaElectrica')
+!new EjemplarTitulo('EjemplarTituloIngenieriaComputadores')
+!new EjemplarTitulo('EjemplarTituloADE')
+!new EjemplarTitulo('EjemplarTituloIA')
+!new EjemplarTitulo('EjemplarTituloITSS')
+!EjemplarTituloIngenieriaSoftware.documento := TituloIngenieriaSoftware
+!EjemplarTituloIngenieriaElectrica.documento := TituloIngenieriaElectrica
+!EjemplarTituloIngenieriaComputadores.documento := TituloIngenieriaComputadores
+!EjemplarTituloADE.documento := TituloADE
+!EjemplarTituloIA.documento := TituloIA
+!EjemplarTituloITSS.documento := TituloITSS
+
+
+
+-- asociaciones 
+
+!insert(UCA,IngenieriaSoftware) into Pertenencia
+!insert(UCA,ADE) into Pertenencia
+!insert(UCA,IA) into Pertenencia
+!insert(UCO,IngenieriaElectrica) into Pertenencia
+!insert(UCO,IngenieriaComputadores) into Pertenencia
+!insert(UCO, ITSS) into Pertenencia
+!insert(UGR, IngenieriaElectrica) into Pertenencia
+!insert(UGR, ADE) into Pertenencia
+!insert(UGR, IA) into Pertenencia
+
+!insert(IngenieriaSoftware, ModeladoPropia) into Formacion
+!insert(IngenieriaSoftware, POOPropia) into Formacion
+!insert(IngenieriaElectrica, ElectronicaPropia) into Formacion
+!insert(IngenieriaComputadores, CalculoPropia) into Formacion
+!insert(IngenieriaComputadores, EstadisticaPropia) into Formacion
+!insert(ADE, MatematicasEmpresarialesPropia) into Formacion
+!insert(IA, ElectronicaPropia) into Formacion
+!insert(ITSS, BDPropia) into Formacion
+
+!insert(CalculoPropia, Yerai) into Ensenianza
+!insert(POOPropia, Aitor) into Ensenianza
+!insert(ElectronicaPropia, Laura) into Ensenianza
+!insert(ModeladoPropia, Paula) into Ensenianza
+!insert(EstadisticaPropia, Javier) into Ensenianza
+!insert(BDPropia, Ainhoa) into Ensenianza
+!insert(MatematicasEmpresarialesPropia, Pepe) into Ensenianza
+
+!insert(matriculaAlbertoCalculo, Alberto)
+!insert(matriculaAlvaroPOO, Alvaro)
+!insert(matriculaRaulElectronica, Raul)
+!insert(matriculaDavidModelado, David)
+!insert(matriculaIvanEstadistica, Ivan)
+!insert(matriculaAnaBD, Ana)
+
+!matriculaAlbertoCalculo.nota := 3
+!matriculaAlbertoCalculo.fechaMatriculacion := 1
+
+!matriculaAlvaroPOO.nota := 7
+!matriculaAlvaroPOO.fechaMatriculacion := 2
+!matriculaAlvaroPOO.fechaAprobada := 10
+
+!matriculaRaulElectronica.nota := 2
+!matriculaRaulElectronica.fechaMatriculacion := 3
+
+
+!matriculaDavidModelado.nota := 5
+!matriculaDavidModelado.fechaMatriculacion := 5
+!matriculaDavidModelado.fechaAprobada := 13
+
+!matriculaIvanEstadistica.nota
+!matriculaIvanEstadistica.fechaMatriculacion := 7
+!matriculaIvanEstadistica.fechaAprobada
+
+!matriculaAnaBD.nota := 9
+!matriculaAnaBD.fechaMatriculacion := 9
+!matriculaAnaBD.fechaAprobada := 22
+
+
+
+
+
+
+
+
