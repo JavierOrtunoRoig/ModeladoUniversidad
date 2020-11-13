@@ -138,3 +138,7 @@ association Cronometracion between
 Universidad [*] role universidad
 clock [1] role clock
 end
+
+constraints
+context Persona inv notProfesorAndAlumno: 
+	Persona.allInstances -> forAll(p | p.asignaturaProfesor and p.asignaturaAlumno -> isEmpty() )

@@ -125,7 +125,7 @@ reset
 
 !insert (Software, EjemplarTituloSoftware) into MaterializacionTitulo
 
-!insert (EjemplarTituloSoftware, Maria) into Adquisicion
+!insert (EjemplarTituloSoftware, Ortu) into Adquisicion
 
 !insert(Modelado, ModeladoSW) into MaterializacionAsignatura
 !insert(Requisitos, RequisitosSW) into MaterializacionAsignatura
