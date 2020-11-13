@@ -3,7 +3,7 @@
     <diagramOptions>
         <autolayout>false</autolayout>
         <antialiasing>false</antialiasing>
-        <showassocnames>false</showassocnames>
+        <showassocnames>true</showassocnames>
         <showattributes>true</showattributes>
         <showmultiplicities>false</showmultiplicities>
         <showoperations>false</showoperations>
@@ -22,16 +22,16 @@
     <node id="RequisitosSW" sizeCalculated="true" type="Object">
         <name>RequisitosSW</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>634.1850842084235</x>
-            <y>146.36869809110385</y>
+            <x>680.1850842084235</x>
+            <y>153.36869809110385</y>
         </strategy>
         <hidden>false</hidden>
     </node>
     <node id="RedesSW" sizeCalculated="true" type="Object">
         <name>RedesSW</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>613.7387140589707</x>
-            <y>292.06335331859566</y>
+            <x>870.7387140589707</x>
+            <y>310.06335331859566</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -54,8 +54,8 @@
     <node id="Antonio" sizeCalculated="true" type="Object">
         <name>Antonio</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>879.0555531117045</x>
-            <y>23.4530951960989</y>
+            <x>946.0555531117045</x>
+            <y>17.4530951960989</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -150,8 +150,8 @@
     <node id="Requisitos" sizeCalculated="true" type="Object">
         <name>Requisitos</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>836.114870456881</x>
-            <y>191.12019735860798</y>
+            <x>911.1148704568809</x>
+            <y>243.12019735860798</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -160,6 +160,14 @@
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
             <x>395.23173300148665</x>
             <y>15.927719257108151</y>
+        </strategy>
+        <hidden>false</hidden>
+    </node>
+    <node id="Reloj" sizeCalculated="true" type="Object">
+        <name>Reloj</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+            <x>2135.0646924827056</x>
+            <y>318.21029956668866</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -174,8 +182,8 @@
     <node id="Redes" sizeCalculated="true" type="Object">
         <name>Redes</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>686.8850818480794</x>
-            <y>391.279851275891</y>
+            <x>687.8850818480794</x>
+            <y>413.279851275891</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -195,11 +203,19 @@
         </strategy>
         <hidden>false</hidden>
     </node>
+    <node id="Reloj2" sizeCalculated="true" type="Object">
+        <name>Reloj2</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+            <x>2136.7188719662836</x>
+            <y>379.6684235436654</y>
+        </strategy>
+        <hidden>false</hidden>
+    </node>
     <node id="Modelado" sizeCalculated="true" type="Object">
         <name>Modelado</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>960.0918771058222</x>
-            <y>51.41448254335276</y>
+            <x>1051.0918771058223</x>
+            <y>47.41448254335276</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -214,8 +230,8 @@
     <node id="ModeladoSW" sizeCalculated="true" type="Object">
         <name>ModeladoSW</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>629.1089875861411</x>
-            <y>13.153279533373222</y>
+            <x>674.1089875861411</x>
+            <y>20.153279533373222</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -246,8 +262,8 @@
     <node id="Gabriel" sizeCalculated="true" type="Object">
         <name>Gabriel</name>
         <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-            <x>910.9481979722076</x>
-            <y>347.54093978775546</y>
+            <x>640.9481979722076</x>
+            <y>291.54093978775546</y>
         </strategy>
         <hidden>false</hidden>
     </node>
@@ -287,21 +303,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Formacion : (asignaturaPropia:CalculoMatematicas, titulacion:MatematicasTitulacion)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Formacion : (asignaturaPropia:CalculoMatematicas, titulacion:MatematicasTitulacion)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Formacion : (asignaturaPropia:CalculoMatematicas, titulacion:MatematicasTitulacion)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -313,6 +314,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Formacion : (asignaturaPropia:CalculoMatematicas, titulacion:MatematicasTitulacion)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Formacion : (asignaturaPropia:CalculoMatematicas, titulacion:MatematicasTitulacion)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -371,21 +387,6 @@
         <name>MaterializacionAsignatura</name>
         <properties>
             <edgeproperty
-                id="[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::source::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -401,17 +402,17 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::target::rolename"
-                sizeCalculated="true" type="rolename"
+                id="[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::source::multiplicity"
+                sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
-                <name>asignaturaPropia</name>
+                <name>1</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::WayPoint::1</attached>
+                    <attached>[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
-                    <placement>TOP</placement>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -427,6 +428,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignaturaPropia</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[MaterializacionAsignatura : (asignaturaComun:Algebra, asignaturaPropia:AlgebraMatematicas)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -515,21 +531,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Ensenianza : (asignaturaProfesor:RequisitosSW, profesor:Gabriel)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Ensenianza : (asignaturaProfesor:RequisitosSW, profesor:Gabriel)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Ensenianza : (asignaturaProfesor:RequisitosSW, profesor:Gabriel)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -541,6 +542,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Ensenianza : (asignaturaProfesor:RequisitosSW, profesor:Gabriel)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Ensenianza : (asignaturaProfesor:RequisitosSW, profesor:Gabriel)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -629,21 +645,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[MaterializacionTitulo : (documento:EjemplarTituloSoftware, titulo:Software)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[MaterializacionTitulo : (documento:EjemplarTituloSoftware, titulo:Software)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[MaterializacionTitulo : (documento:EjemplarTituloSoftware, titulo:Software)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -655,6 +656,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[MaterializacionTitulo : (documento:EjemplarTituloSoftware, titulo:Software)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[MaterializacionTitulo : (documento:EjemplarTituloSoftware, titulo:Software)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -827,21 +843,6 @@
         <name>AsignaturasMatricula</name>
         <properties>
             <edgeproperty
-                id="[AsignaturasMatricula : (asignatura:CalculoMatematicas, asignaturaMatricula:matriculaMariaCalculo)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaMatricula</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[AsignaturasMatricula : (asignatura:CalculoMatematicas, asignaturaMatricula:matriculaMariaCalculo)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[AsignaturasMatricula : (asignatura:CalculoMatematicas, asignaturaMatricula:matriculaMariaCalculo)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -853,6 +854,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[AsignaturasMatricula : (asignatura:CalculoMatematicas, asignaturaMatricula:matriculaMariaCalculo)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignaturaMatricula</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[AsignaturasMatricula : (asignatura:CalculoMatematicas, asignaturaMatricula:matriculaMariaCalculo)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -971,21 +987,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Formacion : (asignaturaPropia:RedesSW, titulacion:SoftwareTitulacion)]::target::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaPropia</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Formacion : (asignaturaPropia:RedesSW, titulacion:SoftwareTitulacion)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Formacion : (asignaturaPropia:RedesSW, titulacion:SoftwareTitulacion)]::target::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -997,6 +998,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Formacion : (asignaturaPropia:RedesSW, titulacion:SoftwareTitulacion)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignaturaPropia</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Formacion : (asignaturaPropia:RedesSW, titulacion:SoftwareTitulacion)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -1055,21 +1071,6 @@
         <name>Ensenianza</name>
         <properties>
             <edgeproperty
-                id="[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaProfesor</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -1085,17 +1086,17 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
+                id="[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::source::rolename"
+                sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
-                <name>1</name>
+                <name>asignaturaProfesor</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::WayPoint::1</attached>
+                    <attached>[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -1111,6 +1112,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Ensenianza : (asignaturaProfesor:AlgebraMatematicas, profesor:Manoli)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -1169,21 +1185,6 @@
         <name>AsignaturasMatricula</name>
         <properties>
             <edgeproperty
-                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaMatricula</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -1199,14 +1200,14 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::target::rolename"
+                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
-                <name>asignatura</name>
+                <name>asignaturaMatricula</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::WayPoint::1</attached>
+                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
@@ -1229,12 +1230,27 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
+                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignatura</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
                 id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaOrtuModelado)]::AssociationName"
                 sizeCalculated="true" type="associationName"
-                userDefined="false" visible="true">
+                userDefined="true" visible="true">
                 <name>AsignaturasMatricula</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetX>-13.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
                     <offsetX>0.0</offsetX>
                     <offsetY>-10.0</offsetY>
@@ -1313,21 +1329,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Pertenencia : (titulacion:SoftwareTitulacion, universidad:UMA)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Pertenencia : (titulacion:SoftwareTitulacion, universidad:UMA)]::WayPoint::2</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Pertenencia : (titulacion:SoftwareTitulacion, universidad:UMA)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -1339,6 +1340,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Pertenencia : (titulacion:SoftwareTitulacion, universidad:UMA)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Pertenencia : (titulacion:SoftwareTitulacion, universidad:UMA)]::WayPoint::2</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -1530,21 +1546,6 @@
         <name>Otorga</name>
         <properties>
             <edgeproperty
-                id="[Otorga : (titulacion:SoftwareTitulacion, titulo:Software)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>titulacion</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Otorga : (titulacion:SoftwareTitulacion, titulo:Software)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Otorga : (titulacion:SoftwareTitulacion, titulo:Software)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -1556,6 +1557,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Otorga : (titulacion:SoftwareTitulacion, titulo:Software)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>titulacion</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Otorga : (titulacion:SoftwareTitulacion, titulo:Software)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -1639,25 +1655,124 @@
         <linkValue>[Otorga : (titulacion:SoftwareTitulacion, titulo:Software)]</linkValue>
     </edge>
     <edge type="BinaryEdge">
-        <source>RedesSW</source>
-        <target>Gabriel</target>
-        <name>Ensenianza</name>
+        <source>UMA</source>
+        <target>Reloj</target>
+        <name>Cronometracion</name>
         <properties>
             <edgeproperty
-                id="[Ensenianza : (asignaturaProfesor:RedesSW, profesor:Gabriel)]::source::rolename"
-                sizeCalculated="true" type="rolename"
+                id="[Cronometracion : (Clock:Reloj, universidad:UMA)]::source::multiplicity"
+                sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
-                <name>asignaturaProfesor</name>
+                <name>*</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[Ensenianza : (asignaturaProfesor:RedesSW, profesor:Gabriel)]::WayPoint::0</attached>
+                    <attached>[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj, universidad:UMA)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>universidad</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj, universidad:UMA)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>Clock</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj, universidad:UMA)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj, universidad:UMA)]::AssociationName"
+                sizeCalculated="true" type="associationName"
+                userDefined="false" visible="true">
+                <name>Cronometracion</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <offsetX>0.0</offsetX>
+                    <offsetY>-10.0</offsetY>
+                    <related length="2">
+                        <related0>[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::0</related0>
+                        <related1>[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::1</related1>
+                    </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+        </properties>
+        <waypoints>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::0"
+                sizeCalculated="true" type="WayPoint"
+                userDefined="false" visible="true">
+                <name>0</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                </strategy>
+                <id>0</id>
+                <specialid>1</specialid>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj, universidad:UMA)]::WayPoint::1"
+                sizeCalculated="true" type="WayPoint"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                </strategy>
+                <id>1</id>
+                <specialid>2</specialid>
+                <hidden>false</hidden>
+            </edgeproperty>
+        </waypoints>
+        <hidden>false</hidden>
+        <linkValue>[Cronometracion : (Clock:Reloj, universidad:UMA)]</linkValue>
+    </edge>
+    <edge type="BinaryEdge">
+        <source>RedesSW</source>
+        <target>Gabriel</target>
+        <name>Ensenianza</name>
+        <properties>
             <edgeproperty
                 id="[Ensenianza : (asignaturaProfesor:RedesSW, profesor:Gabriel)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
@@ -1670,6 +1785,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Ensenianza : (asignaturaProfesor:RedesSW, profesor:Gabriel)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignaturaProfesor</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Ensenianza : (asignaturaProfesor:RedesSW, profesor:Gabriel)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -1788,21 +1918,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[MaterializacionAsignatura : (asignaturaComun:Modelado, asignaturaPropia:ModeladoSW)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[MaterializacionAsignatura : (asignaturaComun:Modelado, asignaturaPropia:ModeladoSW)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[MaterializacionAsignatura : (asignaturaComun:Modelado, asignaturaPropia:ModeladoSW)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -1814,6 +1929,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[MaterializacionAsignatura : (asignaturaComun:Modelado, asignaturaPropia:ModeladoSW)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[MaterializacionAsignatura : (asignaturaComun:Modelado, asignaturaPropia:ModeladoSW)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -1867,25 +1997,124 @@
         <linkValue>[MaterializacionAsignatura : (asignaturaComun:Modelado, asignaturaPropia:ModeladoSW)]</linkValue>
     </edge>
     <edge type="BinaryEdge">
-        <source>matriculaOrtuRequisitos</source>
-        <target>RequisitosSW</target>
-        <name>AsignaturasMatricula</name>
+        <source>UPM</source>
+        <target>Reloj2</target>
+        <name>Cronometracion</name>
         <properties>
             <edgeproperty
-                id="[AsignaturasMatricula : (asignatura:RequisitosSW, asignaturaMatricula:matriculaOrtuRequisitos)]::source::multiplicity"
+                id="[Cronometracion : (Clock:Reloj2, universidad:UPM)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>universidad</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj2, universidad:UPM)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
                 <name>*</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[AsignaturasMatricula : (asignatura:RequisitosSW, asignaturaMatricula:matriculaOrtuRequisitos)]::WayPoint::0</attached>
+                    <attached>[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj2, universidad:UPM)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>Clock</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj2, universidad:UPM)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj2, universidad:UPM)]::AssociationName"
+                sizeCalculated="true" type="associationName"
+                userDefined="false" visible="true">
+                <name>Cronometracion</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <offsetX>0.0</offsetX>
+                    <offsetY>-10.0</offsetY>
+                    <related length="2">
+                        <related0>[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::0</related0>
+                        <related1>[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::1</related1>
+                    </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+        </properties>
+        <waypoints>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::0"
+                sizeCalculated="true" type="WayPoint"
+                userDefined="false" visible="true">
+                <name>0</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                </strategy>
+                <id>0</id>
+                <specialid>1</specialid>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Cronometracion : (Clock:Reloj2, universidad:UPM)]::WayPoint::1"
+                sizeCalculated="true" type="WayPoint"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                </strategy>
+                <id>1</id>
+                <specialid>2</specialid>
+                <hidden>false</hidden>
+            </edgeproperty>
+        </waypoints>
+        <hidden>false</hidden>
+        <linkValue>[Cronometracion : (Clock:Reloj2, universidad:UPM)]</linkValue>
+    </edge>
+    <edge type="BinaryEdge">
+        <source>matriculaOrtuRequisitos</source>
+        <target>RequisitosSW</target>
+        <name>AsignaturasMatricula</name>
+        <properties>
             <edgeproperty
                 id="[AsignaturasMatricula : (asignatura:RequisitosSW, asignaturaMatricula:matriculaOrtuRequisitos)]::source::rolename"
                 sizeCalculated="true" type="rolename"
@@ -1898,6 +2127,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[AsignaturasMatricula : (asignatura:RequisitosSW, asignaturaMatricula:matriculaOrtuRequisitos)]::source::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[AsignaturasMatricula : (asignatura:RequisitosSW, asignaturaMatricula:matriculaOrtuRequisitos)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2100,21 +2344,6 @@
         <name>Alumno</name>
         <properties>
             <edgeproperty
-                id="[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuRequisitos)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaMatricula</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuRequisitos)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuRequisitos)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -2126,6 +2355,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuRequisitos)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignaturaMatricula</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuRequisitos)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2214,21 +2458,6 @@
         <name>MaterializacionAsignatura</name>
         <properties>
             <edgeproperty
-                id="[MaterializacionAsignatura : (asignaturaComun:Calculo, asignaturaPropia:CalculoMatematicas)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaComun</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[MaterializacionAsignatura : (asignaturaComun:Calculo, asignaturaPropia:CalculoMatematicas)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[MaterializacionAsignatura : (asignaturaComun:Calculo, asignaturaPropia:CalculoMatematicas)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -2240,6 +2469,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[MaterializacionAsignatura : (asignaturaComun:Calculo, asignaturaPropia:CalculoMatematicas)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignaturaComun</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[MaterializacionAsignatura : (asignaturaComun:Calculo, asignaturaPropia:CalculoMatematicas)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2328,21 +2572,6 @@
         <name>Ensenianza</name>
         <properties>
             <edgeproperty
-                id="[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaProfesor</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -2358,14 +2587,14 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::target::rolename"
+                id="[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
-                <name>profesor</name>
+                <name>asignaturaProfesor</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::WayPoint::1</attached>
+                    <attached>[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
@@ -2384,6 +2613,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>profesor</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Ensenianza : (asignaturaProfesor:CalculoMatematicas, profesor:Manoli)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2442,21 +2686,6 @@
         <name>AsignaturasMatricula</name>
         <properties>
             <edgeproperty
-                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaMatricula</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -2472,14 +2701,14 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::target::rolename"
+                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
-                <name>asignatura</name>
+                <name>asignaturaMatricula</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::WayPoint::1</attached>
+                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
@@ -2498,6 +2727,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignatura</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[AsignaturasMatricula : (asignatura:ModeladoSW, asignaturaMatricula:matriculaAleModelado)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2586,21 +2830,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuModelado)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuModelado)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuModelado)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -2612,6 +2841,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuModelado)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Alumno : (alumno:Ortu, asignaturaMatricula:matriculaOrtuModelado)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2670,21 +2914,6 @@
         <name>Pertenencia</name>
         <properties>
             <edgeproperty
-                id="[Pertenencia : (titulacion:MatematicasTitulacion, universidad:UPM)]::source::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Pertenencia : (titulacion:MatematicasTitulacion, universidad:UPM)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Pertenencia : (titulacion:MatematicasTitulacion, universidad:UPM)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -2696,6 +2925,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Pertenencia : (titulacion:MatematicasTitulacion, universidad:UPM)]::source::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Pertenencia : (titulacion:MatematicasTitulacion, universidad:UPM)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2910,21 +3154,6 @@
         <name>Alumno</name>
         <properties>
             <edgeproperty
-                id="[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaMatricula</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -2940,17 +3169,17 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
+                id="[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::source::rolename"
+                sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
-                <name>1</name>
+                <name>asignaturaMatricula</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::WayPoint::1</attached>
+                    <attached>[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -2966,6 +3195,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Alumno : (alumno:Ale, asignaturaMatricula:matriculaAleModelado)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3024,21 +3268,6 @@
         <name>Alumno</name>
         <properties>
             <edgeproperty
-                id="[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>asignaturaMatricula</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
@@ -3054,14 +3283,14 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::target::rolename"
+                id="[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
-                <name>alumno</name>
+                <name>asignaturaMatricula</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::WayPoint::1</attached>
+                    <attached>[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
@@ -3080,6 +3309,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>alumno</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Alumno : (alumno:Maria, asignaturaMatricula:matriculaMariaAlgebra)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3168,21 +3412,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Ensenianza : (asignaturaProfesor:ModeladoSW, profesor:Antonio)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Ensenianza : (asignaturaProfesor:ModeladoSW, profesor:Antonio)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Ensenianza : (asignaturaProfesor:ModeladoSW, profesor:Antonio)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -3194,6 +3423,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Ensenianza : (asignaturaProfesor:ModeladoSW, profesor:Antonio)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Ensenianza : (asignaturaProfesor:ModeladoSW, profesor:Antonio)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3314,11 +3558,11 @@
             <edgeproperty
                 id="[MaterializacionAsignatura : (asignaturaComun:Requisitos, asignaturaPropia:RequisitosSW)]::AssociationName"
                 sizeCalculated="true" type="associationName"
-                userDefined="false" visible="true">
+                userDefined="true" visible="true">
                 <name>MaterializacionAsignatura</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
+                    <userOffsetX>50.0</userOffsetX>
+                    <userOffsetY>-8.0</userOffsetY>
                     <offsetX>0.0</offsetX>
                     <offsetY>-10.0</offsetY>
                     <related length="2">
@@ -3396,21 +3640,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Otorga : (titulacion:MatematicasTitulacion, titulo:Matematicas)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Otorga : (titulacion:MatematicasTitulacion, titulo:Matematicas)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Otorga : (titulacion:MatematicasTitulacion, titulo:Matematicas)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -3422,6 +3651,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Otorga : (titulacion:MatematicasTitulacion, titulo:Matematicas)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Otorga : (titulacion:MatematicasTitulacion, titulo:Matematicas)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3480,21 +3724,6 @@
         <name>MaterializacionAsignatura</name>
         <properties>
             <edgeproperty
-                id="[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::source::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -3510,17 +3739,17 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::target::rolename"
-                sizeCalculated="true" type="rolename"
+                id="[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::source::multiplicity"
+                sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
-                <name>asignaturaPropia</name>
+                <name>1</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::WayPoint::1</attached>
+                    <attached>[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
-                    <placement>TOP</placement>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3536,6 +3765,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>asignaturaPropia</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[MaterializacionAsignatura : (asignaturaComun:Redes, asignaturaPropia:RedesSW)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3594,21 +3838,6 @@
         <name>Alumno</name>
         <properties>
             <edgeproperty
-                id="[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::source::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::source::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -3624,14 +3853,14 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::target::multiplicity"
+                id="[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::source::multiplicity"
                 sizeCalculated="true" type="multiplicity"
                 userDefined="false" visible="true">
-                <name>1</name>
+                <name>*</name>
                 <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
                     <userOffsetX>0.0</userOffsetX>
                     <userOffsetY>0.0</userOffsetY>
-                    <attached>[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::WayPoint::1</attached>
+                    <attached>[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::WayPoint::0</attached>
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>BOTTOM</placement>
@@ -3650,6 +3879,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3703,6 +3947,120 @@
         <linkValue>[Alumno : (alumno:David, asignaturaMatricula:matriculaDavidRequisitos)]</linkValue>
     </edge>
     <edge type="BinaryEdge">
+        <source>EjemplarTituloSoftware</source>
+        <target>Ortu</target>
+        <name>Adquisicion</name>
+        <properties>
+            <edgeproperty
+                id="[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::source::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::source::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>titulo</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::target::rolename"
+                sizeCalculated="true" type="rolename"
+                userDefined="false" visible="true">
+                <name>estudiante</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::AssociationName"
+                sizeCalculated="true" type="associationName"
+                userDefined="false" visible="true">
+                <name>Adquisicion</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <offsetX>0.0</offsetX>
+                    <offsetY>-10.0</offsetY>
+                    <related length="2">
+                        <related0>[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::0</related0>
+                        <related1>[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::1</related1>
+                    </related>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+        </properties>
+        <waypoints>
+            <edgeproperty
+                id="[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::0"
+                sizeCalculated="true" type="WayPoint"
+                userDefined="false" visible="true">
+                <name>0</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                </strategy>
+                <id>0</id>
+                <specialid>1</specialid>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]::WayPoint::1"
+                sizeCalculated="true" type="WayPoint"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                </strategy>
+                <id>1</id>
+                <specialid>2</specialid>
+                <hidden>false</hidden>
+            </edgeproperty>
+        </waypoints>
+        <hidden>false</hidden>
+        <linkValue>[Adquisicion : (estudiante:Ortu, titulo:EjemplarTituloSoftware)]</linkValue>
+    </edge>
+    <edge type="BinaryEdge">
         <source>SoftwareTitulacion</source>
         <target>ModeladoSW</target>
         <name>Formacion</name>
@@ -3738,21 +4096,6 @@
                 <hidden>false</hidden>
             </edgeproperty>
             <edgeproperty
-                id="[Formacion : (asignaturaPropia:ModeladoSW, titulacion:SoftwareTitulacion)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Formacion : (asignaturaPropia:ModeladoSW, titulacion:SoftwareTitulacion)]::WayPoint::1</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
                 id="[Formacion : (asignaturaPropia:ModeladoSW, titulacion:SoftwareTitulacion)]::target::rolename"
                 sizeCalculated="true" type="rolename"
                 userDefined="false" visible="true">
@@ -3764,6 +4107,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Formacion : (asignaturaPropia:ModeladoSW, titulacion:SoftwareTitulacion)]::target::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>*</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Formacion : (asignaturaPropia:ModeladoSW, titulacion:SoftwareTitulacion)]::WayPoint::1</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>
@@ -3817,187 +4175,10 @@
         <linkValue>[Formacion : (asignaturaPropia:ModeladoSW, titulacion:SoftwareTitulacion)]</linkValue>
     </edge>
     <edge type="BinaryEdge">
-        <source>EjemplarTituloSoftware</source>
-        <target>Maria</target>
-        <name>Adquisicion</name>
-        <properties>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::source::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>titulo</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::source::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>*</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::target::rolename"
-                sizeCalculated="true" type="rolename"
-                userDefined="false" visible="true">
-                <name>estudiante</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::5</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>TOP</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::target::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::5</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::AssociationName"
-                sizeCalculated="true" type="associationName"
-                userDefined="true" visible="true">
-                <name>Adquisicion</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyInBetween">
-                    <userOffsetX>67.0</userOffsetX>
-                    <userOffsetY>318.0</userOffsetY>
-                    <offsetX>0.0</offsetX>
-                    <offsetY>-10.0</offsetY>
-                    <related length="2">
-                        <related0>[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::0</related0>
-                        <related1>[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::5</related1>
-                    </related>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
-        </properties>
-        <waypoints>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::0"
-                sizeCalculated="true" type="WayPoint"
-                userDefined="false" visible="true">
-                <name>0</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                </strategy>
-                <id>0</id>
-                <specialid>1</specialid>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::1"
-                sizeCalculated="true" type="WayPoint" userDefined="true" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-                    <x>1882.0</x>
-                    <y>195.0</y>
-                </strategy>
-                <id>1</id>
-                <specialid>0</specialid>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::2"
-                sizeCalculated="true" type="WayPoint" userDefined="true" visible="true">
-                <name>2</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-                    <x>1791.0</x>
-                    <y>195.0</y>
-                </strategy>
-                <id>2</id>
-                <specialid>0</specialid>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::3"
-                sizeCalculated="true" type="WayPoint" userDefined="true" visible="true">
-                <name>3</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-                    <x>1795.0</x>
-                    <y>682.0</y>
-                </strategy>
-                <id>3</id>
-                <specialid>0</specialid>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::4"
-                sizeCalculated="true" type="WayPoint" userDefined="true" visible="true">
-                <name>4</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
-                    <x>83.0</x>
-                    <y>674.0</y>
-                </strategy>
-                <id>4</id>
-                <specialid>0</specialid>
-                <hidden>false</hidden>
-            </edgeproperty>
-            <edgeproperty
-                id="[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]::WayPoint::5"
-                sizeCalculated="true" type="WayPoint"
-                userDefined="false" visible="true">
-                <name>5</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyAttachedIntersection">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                </strategy>
-                <id>5</id>
-                <specialid>2</specialid>
-                <hidden>false</hidden>
-            </edgeproperty>
-        </waypoints>
-        <hidden>false</hidden>
-        <linkValue>[Adquisicion : (estudiante:Maria, titulo:EjemplarTituloSoftware)]</linkValue>
-    </edge>
-    <edge type="BinaryEdge">
         <source>MatematicasTitulacion</source>
         <target>AlgebraMatematicas</target>
         <name>Formacion</name>
         <properties>
-            <edgeproperty
-                id="[Formacion : (asignaturaPropia:AlgebraMatematicas, titulacion:MatematicasTitulacion)]::source::multiplicity"
-                sizeCalculated="true" type="multiplicity"
-                userDefined="false" visible="true">
-                <name>1</name>
-                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
-                    <userOffsetX>0.0</userOffsetX>
-                    <userOffsetY>0.0</userOffsetY>
-                    <attached>[Formacion : (asignaturaPropia:AlgebraMatematicas, titulacion:MatematicasTitulacion)]::WayPoint::0</attached>
-                    <offset_x>8</offset_x>
-                    <offset_y>8</offset_y>
-                    <placement>BOTTOM</placement>
-                </strategy>
-                <hidden>false</hidden>
-            </edgeproperty>
             <edgeproperty
                 id="[Formacion : (asignaturaPropia:AlgebraMatematicas, titulacion:MatematicasTitulacion)]::source::rolename"
                 sizeCalculated="true" type="rolename"
@@ -4010,6 +4191,21 @@
                     <offset_x>8</offset_x>
                     <offset_y>8</offset_y>
                     <placement>TOP</placement>
+                </strategy>
+                <hidden>false</hidden>
+            </edgeproperty>
+            <edgeproperty
+                id="[Formacion : (asignaturaPropia:AlgebraMatematicas, titulacion:MatematicasTitulacion)]::source::multiplicity"
+                sizeCalculated="true" type="multiplicity"
+                userDefined="false" visible="true">
+                <name>1</name>
+                <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyRelativeToAttached">
+                    <userOffsetX>0.0</userOffsetX>
+                    <userOffsetY>0.0</userOffsetY>
+                    <attached>[Formacion : (asignaturaPropia:AlgebraMatematicas, titulacion:MatematicasTitulacion)]::WayPoint::0</attached>
+                    <offset_x>8</offset_x>
+                    <offset_y>8</offset_y>
+                    <placement>BOTTOM</placement>
                 </strategy>
                 <hidden>false</hidden>
             </edgeproperty>

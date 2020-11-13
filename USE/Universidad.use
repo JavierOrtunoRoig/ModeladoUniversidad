@@ -139,6 +139,60 @@ Universidad [*] role universidad
 Clock [1] role Clock
 end
 
---constraints
---context Persona inv notProfesorAndAlumno: 
---	Persona.allInstances -> forAll(p | p.asignaturaProfesor and p.asignaturaAlumno -> isEmpty() )
+constraints
+
+context Persona inv notProfesorAndAlumno: 
+	Persona.allInstances -> forAll(p | (p.asignaturaProfesor -> intersection( p.asignaturaMatricula.asignatura)) -> isEmpty() )
+
+context Matricula inv rangoNota:
+	Matricula.allInstances -> forAll(m | not m.nota.oclIsUndefined() implies m.nota >= 0 and m.nota <= 10)
+
+context Matricula inv asignaturaAprobada:
+    Matricula.allInstances -> forAll(m1,m2 | (m1.alumno = m2.alumno) and (m1.asignatura = m2. asignatura) and (m1.fechaMatriculacion < m2.fechaMatriculacion) implies m1.nota < 5)
+
+context Matricula inv GradoParaPostgrado:
+    Matricula.allInstances -> forAll(m | m.asignatura.titulacion.oclIsTypeOf(Posgrado) implies m.alumno.titulo ->select(titulo.titulacion.oclIsTypeOf(Grado)) -> size() > 0) 
+
+context AsignaturaPropia inv mismoID:
+    AsignaturaPropia.allInstances -> forAll(a1,a2 | a1 <> a2 and a1.codigo = a2.codigo implies a1.titulacion <> a2.titulacion)
+
+context Persona inv cantTitulos:
+    Universidad.allInstances -> forAll(u | u.titulacion -> size() >= 
+    (Persona.allInstances ->  select(p | p.titulo.titulo.nombreUniversidad 
+    -> includes(u.nombre))) -> size())
+
+context Titulacion inv rangoNumCursos:
+    Titulacion.allInstances -> forAll(t |t.numCursos > 0)
+
+context AsignaturaPropia inv notNullCreditos:
+    AsignaturaPropia.allInstances -> forAll(a | a.creditos > 0)
+
+context AsignaturaPropia inv rangoCodigo:
+    (self.codigo >= 100 and self.codigo <  (self.titulacion.numCursos + 1) * 100)
+
+context Matricula inv fechas:
+    Matricula.allInstances -> forAll(m | not m.fechaAprobada.oclIsUndefined() implies m.fechaMatriculacion < m.fechaAprobada)
+
+context Persona inv tituloValido:
+   Persona.allInstances -> forAll (p | p.titulo -> 
+    forAll(t | if t.titulo.titulacion.oclIsTypeOf(Grado) then 
+    (240 <=  (t.estudiante.asignaturaMatricula -> 
+    select(m|(m.asignatura.titulacion =t.titulo.titulacion) and 
+    not m.fechaAprobada.oclIsUndefined() and m.nota >= 5).asignatura.creditos -> sum()
+                                )
+                ) 
+    else 
+    (60 <=  (t.estudiante.asignaturaMatricula ->
+    select(m|(m.asignatura.titulacion = t.titulo.titulacion) and 
+    not m.fechaAprobada.oclIsUndefined()).asignatura.creditos -> sum()
+                                )
+                )
+    endif
+        )
+    )
+
+
+
+
+
+
