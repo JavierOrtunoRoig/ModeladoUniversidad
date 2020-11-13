@@ -5,6 +5,9 @@ reset
 !new Universidad('UMA')
 !new Universidad('UPM')
 
+!new Clock('Reloj')
+!Reloj.time := 0
+
 !UMA.nombre := 'UMA'
 !UPM.nombre := 'UPM'
 
@@ -126,6 +129,11 @@ reset
 !insert (Software, EjemplarTituloSoftware) into MaterializacionTitulo
 
 !insert (EjemplarTituloSoftware, Ortu) into Adquisicion
+
+!insert (UMA, Reloj) into Cronometracion
+Reloj.time = 0!insert (UMA, Reloj
+) into Cronometracion
+Reloj.time = 0
 
 !insert(Modelado, ModeladoSW) into MaterializacionAsignatura
 !insert(Requisitos, RequisitosSW) into MaterializacionAsignatura

@@ -78,7 +78,7 @@ class Persona
 
 end
 
-class clock
+class Clock
 attributes
 time : Integer
 
@@ -136,9 +136,9 @@ end
 
 association Cronometracion between
 Universidad [*] role universidad
-clock [1] role clock
+Clock [1] role Clock
 end
 
-constraints
-context Persona inv notProfesorAndAlumno: 
-	Persona.allInstances -> forAll(p | p.asignaturaProfesor and p.asignaturaAlumno -> isEmpty() )
+--constraints
+--context Persona inv notProfesorAndAlumno: 
+--	Persona.allInstances -> forAll(p | p.asignaturaProfesor and p.asignaturaAlumno -> isEmpty() )
