@@ -24,30 +24,37 @@ reset
 !MatematicasTitulacion.nombre := 'Matematicas'
 !MatematicasTitulacion.numCursos := 4
 
+!new AsignaturaPropia('ModeladoSW')
+!new AsignaturaPropia('RequisitosSW')
+!new AsignaturaPropia('RedesSW')
+!new AsignaturaPropia('AlgebraMatematicas')
+!new AsignaturaPropia('CalculoMatematicas')
+
 !new Asignatura('Modelado')
 !new Asignatura('Requisitos')
 !new Asignatura('Redes')
 !new Asignatura('Algebra')
 !new Asignatura('Calculo')
 
-!new Matriculacion('matriculaOrtuModelado')
-!new Matriculacion('matriculaOrtuRequisitos')
-!new Matriculacion('matriculaDavidRequisitos')
-!new Matriculacion('matriculaAleModelado')
-!new Matriculacion('matriculaMariaAlgebra')
-!new Matriculacion('matriculaMariaCalculo')
+
+!new Matricula('matriculaOrtuModelado')
+!new Matricula('matriculaOrtuRequisitos')
+!new Matricula('matriculaDavidRequisitos')
+!new Matricula('matriculaAleModelado')
+!new Matricula('matriculaMariaAlgebra')
+!new Matricula('matriculaMariaCalculo')
 
 
-!Modelado.creditos := 60
-!Modelado.codigo := 308
-!Requisitos.creditos := 60
-!Requisitos.codigo := 201
-!Redes.creditos := 60
-!Redes.codigo := 105
-!Algebra.creditos := 60
-!Algebra.codigo := 105
-!Calculo.creditos := 60
-!Calculo.codigo := 308
+!ModeladoSW.creditos := 60
+!ModeladoSW.codigo := 308
+!RequisitosSW.creditos := 60
+!RequisitosSW.codigo := 201
+!RedesSW.creditos := 60
+!RedesSW.codigo := 105
+!AlgebraMatematicas.creditos := 60
+!AlgebraMatematicas.codigo := 105
+!CalculoMatematicas.creditos := 60
+!CalculoMatematicas.codigo := 308
 
 !new Titulo('Software')
 !new Titulo('Matematicas')
@@ -60,24 +67,24 @@ reset
 !insert(UMA, SoftwareTitulacion) into Pertenencia
 !insert(UPM, MatematicasTitulacion) into Pertenencia
 
-!insert (SoftwareTitulacion, Modelado) into Formacion
-!insert (SoftwareTitulacion, Requisitos) into Formacion
-!insert (SoftwareTitulacion, Redes) into Formacion
-!insert (MatematicasTitulacion, Algebra) into Formacion
-!insert (MatematicasTitulacion, Calculo) into Formacion
+!insert (SoftwareTitulacion, ModeladoSW) into Formacion
+!insert (SoftwareTitulacion, RequisitosSW) into Formacion
+!insert (SoftwareTitulacion, RedesSW) into Formacion
+!insert (MatematicasTitulacion, AlgebraMatematicas) into Formacion
+!insert (MatematicasTitulacion, CalculoMatematicas) into Formacion
 
-!insert (matriculaOrtuModelado, Modelado) into AsignaturasMatriculacion
-!insert (matriculaAleModelado, Modelado) into AsignaturasMatriculacion
-!insert (matriculaOrtuRequisitos, Requisitos) into AsignaturasMatriculacion
-!insert (matriculaDavidRequisitos, Requisitos) into AsignaturasMatriculacion
-!insert (matriculaMariaCalculo, Calculo) into AsignaturasMatriculacion
-!insert (matriculaMariaAlgebra, Algebra) into AsignaturasMatriculacion
+!insert (matriculaOrtuModelado, ModeladoSW) into AsignaturasMatricula
+!insert (matriculaAleModelado, ModeladoSW) into AsignaturasMatricula
+!insert (matriculaOrtuRequisitos, RequisitosSW) into AsignaturasMatricula
+!insert (matriculaDavidRequisitos, RequisitosSW) into AsignaturasMatricula
+!insert (matriculaMariaCalculo, CalculoMatematicas) into AsignaturasMatricula
+!insert (matriculaMariaAlgebra, AlgebraMatematicas) into AsignaturasMatricula
 
-!insert (Modelado, Antonio) into Ensenianza
-!insert (Requisitos, Gabriel) into Ensenianza
-!insert (Redes, Gabriel) into Ensenianza
-!insert (Algebra, Manoli) into Ensenianza
-!insert (Calculo, Manoli) into Ensenianza
+!insert (ModeladoSW, Antonio) into Ensenianza
+!insert (RequisitosSW, Gabriel) into Ensenianza
+!insert (RedesSW, Gabriel) into Ensenianza
+!insert (AlgebraMatematicas, Manoli) into Ensenianza
+!insert (CalculoMatematicas, Manoli) into Ensenianza
 
 
 !insert (matriculaOrtuModelado, Ortu) into Alumno
@@ -116,9 +123,16 @@ reset
 !insert (SoftwareTitulacion, Software) into Otorga
 !insert (MatematicasTitulacion, Matematicas) into Otorga
 
-!insert (Software, EjemplarTituloSoftware) into Materializacion
+!insert (Software, EjemplarTituloSoftware) into MaterializacionTitulo
 
 !insert (EjemplarTituloSoftware, Maria) into Adquisicion
+
+!insert(Modelado, ModeladoSW) into MaterializacionAsignatura
+!insert(Requisitos, RequisitosSW) into MaterializacionAsignatura
+!insert(Redes, RedesSW) into MaterializacionAsignatura
+!insert(Calculo, CalculoMatematicas) into MaterializacionAsignatura
+!insert(Algebra, AlgebraMatematicas) into MaterializacionAsignatura
+
 
 
 
