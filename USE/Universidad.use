@@ -141,38 +141,49 @@ end
 
 constraints
 
+-- Un profesor no puede ser alumno de la asignatura que imparte
 context Persona inv notProfesorAndAlumno: 
 	Persona.allInstances -> forAll(p | (p.asignaturaProfesor -> intersection( p.asignaturaMatricula.asignatura)) -> isEmpty() )
 
+-- La nota debe estar entre 0 y 10.
 context Matricula inv rangoNota:
 	Matricula.allInstances -> forAll(m | not m.nota.oclIsUndefined() implies m.nota >= 0 and m.nota <= 10)
 
+-- Un alumno solo puede aprobar una asignatura una vez, no pudiendo matricularse de asignaturas que ya ha aprobado en cursos anteriores.
 context Matricula inv asignaturaAprobada:
     Matricula.allInstances -> forAll(m1,m2 | (m1.alumno = m2.alumno) and (m1.asignatura = m2. asignatura) and (m1.fechaMatriculacion < m2.fechaMatriculacion) implies m1.nota < 5)
 
-context Matricula inv GradoParaPostgrado:
+-- Finalmente, para poder matricularse de una asignatura de posgrado, el alumno ha de estar en posesión de un título de grado (de esa universidad o de otra) -> Usar kindof o typeof para saber si los títulos que tiene son grados o postgrados. (Es decir títulos de un alumno > 0)
+context Matricula inv gradoParaPosgrado:
     Matricula.allInstances -> forAll(m | m.asignatura.titulacion.oclIsTypeOf(Posgrado) implies m.alumno.titulo ->select(titulo.titulacion.oclIsTypeOf(Grado)) -> size() > 0) 
 
+-- Asignaturas con mismo id deben ser de distintas titulaciones
 context AsignaturaPropia inv mismoID:
     AsignaturaPropia.allInstances -> forAll(a1,a2 | a1 <> a2 and a1.codigo = a2.codigo implies a1.titulacion <> a2.titulacion)
 
-context Persona inv cantTitulos:
+-- A lo largo de su vida, un alumno puede obtener tantos títulos como titulaciones oferta la universidad
+context Persona inv cantidadTitulos:
     Universidad.allInstances -> forAll(u | u.titulacion -> size() >= 
     (Persona.allInstances ->  select(p | p.titulo.titulo.nombreUniversidad 
     -> includes(u.nombre))) -> size())
 
+-- En “Titulación” el atributo “numCursos” tiene que ser mayor que 0.
 context Titulacion inv rangoNumCursos:
     Titulacion.allInstances -> forAll(t |t.numCursos > 0)
 
+-- En “Asignatura” el atributo “créditos” tiene que ser mayor que 0.
 context AsignaturaPropia inv notNullCreditos:
     AsignaturaPropia.allInstances -> forAll(a | a.creditos > 0)
 
+-- ID asignatura entre 100 y numCursos*100 
 context AsignaturaPropia inv rangoCodigo:
     (self.codigo >= 100 and self.codigo <  (self.titulacion.numCursos + 1) * 100)
 
+-- FechaMatriculacion < FechaAprobada en Matriculacion
 context Matricula inv fechas:
     Matricula.allInstances -> forAll(m | not m.fechaAprobada.oclIsUndefined() implies m.fechaMatriculacion < m.fechaAprobada)
 
+-- Para obtener un título es preciso tener aprobados al menos 240 créditos de las asignaturas que componen una titulación de grado, o los 60 que componen una de posgrado -> restricción comprobar si sumamos 240 créditos de asignaturas de la titulación correspondiente al título que asociamos a la persona (con un forall de las asignaturas cuya titulación.nombre sea = titulo.titulacion.nombre)
 context Persona inv tituloValido:
    Persona.allInstances -> forAll (p | p.titulo -> 
     forAll(t | if t.titulo.titulacion.oclIsTypeOf(Grado) then 
