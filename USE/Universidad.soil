@@ -51,12 +51,11 @@ reset
 !new Matricula('matriculaAleModelado')
 !new Matricula('matriculaMariaAlgebra')
 !new Matricula('matriculaMariaCalculo')
-!new Matricula('matriculaAntonioModelado')
 
 
 !ModeladoSW.creditos := 120
 !ModeladoSW.codigo := 308
-!RequisitosSW.creditos := 100
+!RequisitosSW.creditos := 120
 !RequisitosSW.codigo := 201
 !RedesSW.creditos := 80
 !RedesSW.codigo := 105
@@ -91,7 +90,6 @@ reset
 !insert (matriculaDavidRequisitos, RequisitosSW) into AsignaturasMatricula
 !insert (matriculaMariaCalculo, CalculoMatematicas) into AsignaturasMatricula
 !insert (matriculaMariaAlgebra, AlgebraMatematicas) into AsignaturasMatricula
-!insert (matriculaAntonioModelado, ModeladoSW) into AsignaturasMatricula
 
 !insert (ModeladoSW, Antonio) into Ensenianza
 !insert (RequisitosSW, Gabriel) into Ensenianza
@@ -106,7 +104,6 @@ reset
 !insert (matriculaDavidRequisitos, David) into Alumno
 !insert (matriculaMariaCalculo, Maria) into Alumno
 !insert (matriculaMariaAlgebra, Maria) into Alumno
-!insert (matriculaAntonioModelado, Antonio) into Alumno
 
 !matriculaOrtuModelado.nota := 9
 !matriculaOrtuModelado.fechaMatriculacion := 0
