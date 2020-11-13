@@ -1,0 +1,140 @@
+model Universidad
+
+class Universidad
+
+attributes
+nombre : String
+
+end
+
+
+class Titulacion
+
+attributes
+nombre : String
+numCursos : Integer
+
+end
+
+
+class Posgrado < Titulacion
+
+end
+
+
+class Grado < Titulacion
+
+end
+
+
+class Titulo
+
+attributes
+nombreUniversidad : String derived = self.titulacion.universidad.nombre
+nombreTitulacion : String derived = self.titulacion.nombre
+
+
+end
+
+
+class EjemplarTitulo
+attributes
+ultimoCurso : Integer derived = self.estudiante.asignaturaMatricula -> 
+
+select(m|(m.asignatura.titulacion = self.titulo.titulacion) and m.fechaAprobada = 
+
+self.estudiante.asignaturaMatricula -> 
+select(m| (not m.fechaAprobada.oclIsUndefined()) and 
+(m.asignatura.titulacion = self.titulo.titulacion)).fechaAprobada -> max()) -> asSequence() -> at(1).asignatura.curso
+
+end
+
+
+
+class Matricula
+
+attributes
+
+nota : Integer
+fechaMatriculacion : Integer
+fechaAprobada : Integer 
+end
+
+class Asignatura
+
+end
+
+class AsignaturaPropia
+
+attributes
+creditos : Integer
+curso : Integer derived = (self.codigo / 100).floor()
+codigo : Integer 
+
+end
+
+
+class Persona
+
+end
+
+class clock
+attributes
+time : Integer
+
+operations
+next()
+end
+
+
+composition Pertenencia between
+Universidad [1] 
+Titulacion [*] 
+end
+
+aggregation Formacion between
+Titulacion [1]
+AsignaturaPropia [*]
+end
+
+composition Otorga between
+Titulacion [1] 
+Titulo [1] 
+end
+
+association MaterializacionTitulo between
+Titulo [1] role titulo
+EjemplarTitulo [*] role documento
+end
+
+association MaterializacionAsignatura between
+Asignatura [1] role asignaturaComun
+AsignaturaPropia [*] role asignaturaPropia
+end
+
+association Adquisicion between
+EjemplarTitulo [*] role titulo
+Persona [1] role estudiante
+end
+
+association Alumno between
+Matricula [*] role asignaturaMatricula
+Persona [1] role alumno
+
+end
+
+
+association AsignaturasMatricula between
+Matricula [*] role asignaturaMatricula
+AsignaturaPropia [1] role asignatura
+end
+
+association Ensenianza between
+AsignaturaPropia [*] role asignaturaProfesor
+Persona [1] role profesor
+end
+
+association Cronometracion between
+Universidad [*] role universidad
+clock [1] role clock
+end
