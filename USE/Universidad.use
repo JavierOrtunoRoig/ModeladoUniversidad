@@ -92,7 +92,7 @@ Universidad [1]
 Titulacion [*] 
 end
 
-aggregation Formacion between
+composition Formacion between
 Titulacion [1]
 AsignaturaPropia [*]
 end

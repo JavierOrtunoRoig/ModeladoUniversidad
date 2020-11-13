@@ -45,7 +45,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_3_62b021d_1605196502444_377422_4813" name="" visibility="public" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_3_62b021d_1605111368973_950205_5372" name="" visibility="public" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_62b021d_1605110184022_202028_5145" name="asignaturaPropia" visibility="public" type="_19_0_3_62b021d_1605272732429_431454_4814" aggregation="shared" association="_19_0_3_62b021d_1605110184022_771293_5144">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_19_0_3_62b021d_1605110184022_202028_5145" name="asignaturaPropia" visibility="public" type="_19_0_3_62b021d_1605272732429_431454_4814" aggregation="composite" association="_19_0_3_62b021d_1605110184022_771293_5144">
       <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_3_62b021d_1605111321223_194202_5353" name="" visibility="public"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_3_62b021d_1605111321223_303817_5354" name="" visibility="public" value="*"/>
     </ownedAttribute>
