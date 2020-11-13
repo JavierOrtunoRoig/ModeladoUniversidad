@@ -1,0 +1,200 @@
+reset
+
+!new Persona ('Jesus');
+!new Persona ('Mario');
+!new Persona ('Javi');
+!new Persona ('Dani');
+!new Persona ('Pedro');
+
+
+!new Universidad('UMA');
+!new Universidad('UCA');
+
+!UMA.nombre := 'UMA';
+
+!UCA.nombre := 'UCA';
+
+
+!new Grado('IngenieriaDeSoftware');
+!new Grado('Matematicas');
+!new Grado('Magisterio');
+!new Posgrado('BigData');
+
+!IngenieriaDeSoftware.nombre := 'IngenieriaDeSoftware';
+!IngenieriaDeSoftware.numCursos := 4;
+
+!Matematicas.nombre := 'Matematicas';
+!Matematicas.numCursos := 4;
+
+!Magisterio.nombre := 'Magisterio';
+!Magisterio.numCursos := 4;
+
+!BigData.nombre := 'BigData';
+!BigData.numCursos := 2;
+
+
+!new Clock ('Reloj');
+!Reloj.time := 0;
+
+
+!new Titulo('TituloMatematicas');
+!new Titulo('TituloIngenieriaDeSoftware');
+!new Titulo('TituloMagisterio');
+!new Titulo('TituloBigData');
+
+
+!new EjemplarTitulo('MatematicasDani');
+!new EjemplarTitulo('MatematicasMario');
+
+
+!new Asignatura('Modelado');
+!new Asignatura('MatematicasDiscretas');
+!new Asignatura('Didactica');
+!new Asignatura('Algebra');
+!new Asignatura('Analisis');
+
+
+!new AsignaturaPropia('ModeladoGradoSoftware');
+!new AsignaturaPropia('MatematicasDiscretasGradoSoftware');
+!new AsignaturaPropia('MatematicasDiscretasGradoMatematicas');
+!new AsignaturaPropia('AlgebraGradoSoftware');
+!new AsignaturaPropia('AlgebraGradoMatematicas');
+!new AsignaturaPropia('AnalisisPosgradoBigData');
+!new AsignaturaPropia('DidacticaGradoMagisterio');
+
+!ModeladoGradoSoftware.creditos := 6;
+!ModeladoGradoSoftware.codigo := 302;
+
+!MatematicasDiscretasGradoSoftware.creditos := 6;
+!MatematicasDiscretasGradoSoftware.codigo := 101;
+
+!MatematicasDiscretasGradoMatematicas.creditos := 240;
+!MatematicasDiscretasGradoMatematicas.codigo := 203;
+
+!AlgebraGradoSoftware.creditos := 6;
+!AlgebraGradoSoftware.codigo := 107;
+
+!AlgebraGradoMatematicas.creditos := 240;
+!AlgebraGradoMatematicas.codigo := 108;
+
+!AnalisisPosgradoBigData.creditos := 6;
+!AnalisisPosgradoBigData.codigo := 204;
+
+!DidacticaGradoMagisterio.creditos := 6;
+!DidacticaGradoMagisterio.codigo := 409;
+
+
+!new Matricula('MatriculaJesusModeladoGradoSoftware');
+!new Matricula('MatriculaDaniAnalisisPosgradoBigData');
+!new Matricula('MatriculaJaviAlgebraGradoSoftware');
+!new Matricula('MatriculaJaviMatematicasDiscretasGradoSoftware');
+!new Matricula('MatriculaJesusAlgebraGradoMatematicas');
+!new Matricula('MatriculaMarioDidacticaGradoMagisterio');
+!new Matricula('MatriculaPedroAlgebraGradoSoftware');
+!new Matricula('MatriculaPedroAlgebraGradoMatematicas');
+!new Matricula('MatriculaDaniAlgebraGradoMatematicas');
+!new Matricula('MatriculaMarioMatematicasDiscretasGradoMatematicas');
+
+!MatriculaJesusModeladoGradoSoftware.nota := null;
+!MatriculaJesusModeladoGradoSoftware.fechaMatriculacion := 20;
+!MatriculaJesusModeladoGradoSoftware.fechaAprobada := null;
+
+!MatriculaDaniAnalisisPosgradoBigData.nota := 7;
+!MatriculaDaniAnalisisPosgradoBigData.fechaMatriculacion := 19;
+!MatriculaDaniAnalisisPosgradoBigData.fechaAprobada := 20;
+
+!MatriculaJaviAlgebraGradoSoftware.nota := 4;
+!MatriculaJaviAlgebraGradoSoftware.fechaMatriculacion := 18;
+!MatriculaJaviAlgebraGradoSoftware.fechaAprobada := null;
+
+!MatriculaJaviMatematicasDiscretasGradoSoftware.nota := 10;
+!MatriculaJaviMatematicasDiscretasGradoSoftware.fechaMatriculacion := 17;
+!MatriculaJaviMatematicasDiscretasGradoSoftware.fechaAprobada := 18;
+
+!MatriculaJesusAlgebraGradoMatematicas.nota := 8;
+!MatriculaJesusAlgebraGradoMatematicas.fechaMatriculacion := 20;
+!MatriculaJesusAlgebraGradoMatematicas.fechaAprobada := 23;
+
+!MatriculaMarioDidacticaGradoMagisterio.nota := 3;
+!MatriculaMarioDidacticaGradoMagisterio.fechaMatriculacion := 19;
+!MatriculaMarioDidacticaGradoMagisterio.fechaAprobada := null;
+
+!MatriculaPedroAlgebraGradoSoftware.nota := 4;
+!MatriculaPedroAlgebraGradoSoftware.fechaMatriculacion := 18;
+!MatriculaPedroAlgebraGradoSoftware.fechaAprobada := null;
+
+!MatriculaPedroAlgebraGradoMatematicas.nota := 4;
+!MatriculaPedroAlgebraGradoMatematicas.fechaMatriculacion := 18;
+!MatriculaPedroAlgebraGradoMatematicas.fechaAprobada := null;
+
+!MatriculaDaniAlgebraGradoMatematicas.nota := 5;
+!MatriculaDaniAlgebraGradoMatematicas.fechaMatriculacion := 18;
+!MatriculaDaniAlgebraGradoMatematicas.fechaAprobada := 22;
+
+!MatriculaMarioMatematicasDiscretasGradoMatematicas.nota := 9;
+!MatriculaMarioMatematicasDiscretasGradoMatematicas.fechaMatriculacion := 17;
+!MatriculaMarioMatematicasDiscretasGradoMatematicas.fechaAprobada := 18;
+
+
+
+!insert(UMA, Reloj) into Cronometracion;
+!insert(UCA, Reloj) into Cronometracion;
+
+!insert(UMA, IngenieriaDeSoftware) into Pertenencia
+!insert(UMA, Matematicas) into Pertenencia
+!insert(UMA, BigData) into Pertenencia
+!insert(UCA, Magisterio) into Pertenencia
+
+!insert(IngenieriaDeSoftware, TituloIngenieriaDeSoftware) into Otorga
+!insert(Matematicas, TituloMatematicas) into Otorga
+!insert(Magisterio, TituloMagisterio) into Otorga
+!insert(BigData, TituloBigData) into Otorga
+
+!insert(TituloMatematicas, MatematicasMario) into MaterializacionTitulo
+!insert(TituloMatematicas, MatematicasDani) into MaterializacionTitulo
+
+!insert(MatematicasMario, Mario) into Adquisicion
+!insert(MatematicasDani, Dani) into Adquisicion
+
+!insert(MatematicasDiscretas, MatematicasDiscretasGradoMatematicas) into MaterializacionAsignatura
+!insert(MatematicasDiscretas, MatematicasDiscretasGradoSoftware) into MaterializacionAsignatura
+!insert(Algebra, AlgebraGradoMatematicas) into MaterializacionAsignatura
+!insert(Algebra, AlgebraGradoSoftware) into MaterializacionAsignatura
+!insert(Didactica, DidacticaGradoMagisterio) into MaterializacionAsignatura
+!insert(Analisis, AnalisisPosgradoBigData) into MaterializacionAsignatura
+!insert(Modelado, ModeladoGradoSoftware) into MaterializacionAsignatura
+
+!insert(IngenieriaDeSoftware, MatematicasDiscretasGradoSoftware) into Formacion
+!insert(IngenieriaDeSoftware, AlgebraGradoSoftware) into Formacion
+!insert(IngenieriaDeSoftware, ModeladoGradoSoftware) into Formacion
+!insert(BigData, AnalisisPosgradoBigData) into Formacion
+!insert(Matematicas, MatematicasDiscretasGradoMatematicas) into Formacion
+!insert(Matematicas, AlgebraGradoMatematicas) into Formacion
+!insert(Magisterio, DidacticaGradoMagisterio) into Formacion
+
+!insert(MatematicasDiscretasGradoSoftware, Dani) into Ensenianza
+!insert(AlgebraGradoSoftware, Dani) into Ensenianza
+!insert(DidacticaGradoMagisterio, Javi) into Ensenianza
+
+!insert(MatriculaJesusModeladoGradoSoftware , Jesus) into Alumno
+!insert(MatriculaJesusAlgebraGradoMatematicas, Jesus) into Alumno
+!insert(MatriculaDaniAnalisisPosgradoBigData, Dani) into Alumno
+!insert(MatriculaDaniAlgebraGradoMatematicas , Dani) into Alumno
+!insert(MatriculaPedroAlgebraGradoSoftware, Pedro) into Alumno
+!insert(MatriculaPedroAlgebraGradoMatematicas, Pedro) into Alumno
+!insert(MatriculaJaviMatematicasDiscretasGradoSoftware, Javi) into Alumno
+!insert(MatriculaJaviAlgebraGradoSoftware, Javi) into Alumno
+!insert(MatriculaMarioDidacticaGradoMagisterio , Mario) into Alumno
+!insert(MatriculaMarioMatematicasDiscretasGradoMatematicas , Mario) into Alumno
+
+!insert(MatriculaJesusModeladoGradoSoftware, ModeladoGradoSoftware) into AsignaturasMatricula
+!insert(MatriculaJesusAlgebraGradoMatematicas, AlgebraGradoMatematicas) into AsignaturasMatricula
+!insert(MatriculaDaniAnalisisPosgradoBigData, AnalisisPosgradoBigData) into AsignaturasMatricula
+!insert(MatriculaDaniAlgebraGradoMatematicas, AlgebraGradoMatematicas) into AsignaturasMatricula
+!insert(MatriculaPedroAlgebraGradoSoftware, AlgebraGradoSoftware) into AsignaturasMatricula
+!insert(MatriculaPedroAlgebraGradoMatematicas, AlgebraGradoMatematicas) into AsignaturasMatricula
+!insert(MatriculaJaviMatematicasDiscretasGradoSoftware, MatematicasDiscretasGradoSoftware) into AsignaturasMatricula
+!insert(MatriculaJaviAlgebraGradoSoftware, AlgebraGradoSoftware) into AsignaturasMatricula
+!insert(MatriculaMarioDidacticaGradoMagisterio, DidacticaGradoMagisterio) into AsignaturasMatricula
+!insert(MatriculaMarioMatematicasDiscretasGradoMatematicas, MatematicasDiscretasGradoMatematicas) into AsignaturasMatricula
+
