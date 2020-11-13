@@ -168,11 +168,11 @@ context Persona inv cantidadTitulos:
     -> includes(u.nombre))) -> size())
 
 -- En “Titulación” el atributo “numCursos” tiene que ser mayor que 0.
-context Titulacion inv rangoNumCursos:
+context Titulacion inv numeroCursosNoNegativos:
     Titulacion.allInstances -> forAll(t |t.numCursos > 0)
 
 -- En “Asignatura” el atributo “créditos” tiene que ser mayor que 0.
-context AsignaturaPropia inv notNullCreditos:
+context AsignaturaPropia inv creditosNoNegativos:
     AsignaturaPropia.allInstances -> forAll(a | a.creditos > 0)
 
 -- ID asignatura entre 100 y numCursos*100 
