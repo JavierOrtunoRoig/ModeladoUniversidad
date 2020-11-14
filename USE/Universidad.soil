@@ -1,17 +1,11 @@
 reset
 
--- INITIAL VALUES
-
 !new Universidad('UMA')
 !new Universidad('UPM')
-
 !new Clock('Reloj')
 !Reloj.time := 0
-
-
 !UMA.nombre := 'UMA'
 !UPM.nombre := 'UPM'
-
 !new Persona('Ale')
 !new Persona('Ortu')
 !new Persona('David')
@@ -19,39 +13,28 @@ reset
 !new Persona('Gabriel')
 !new Persona('Manoli')
 !new Persona('Antonio')
-
 !new Grado('SoftwareTitulacion')
 !new Grado('MatematicasTitulacion')
-
-
 !SoftwareTitulacion.nombre := 'Software'
 !SoftwareTitulacion.numCursos := 4
 !MatematicasTitulacion.nombre := 'Matematicas'
 !MatematicasTitulacion.numCursos := 4
-
-
-
 !new AsignaturaPropia('ModeladoSW')
 !new AsignaturaPropia('RequisitosSW')
 !new AsignaturaPropia('RedesSW')
 !new AsignaturaPropia('AlgebraMatematicas')
 !new AsignaturaPropia('CalculoMatematicas')
-
 !new Asignatura('Modelado')
 !new Asignatura('Requisitos')
 !new Asignatura('Redes')
 !new Asignatura('Algebra')
 !new Asignatura('Calculo')
-
-
 !new Matricula('matriculaOrtuModelado')
 !new Matricula('matriculaOrtuRequisitos')
 !new Matricula('matriculaDavidRequisitos')
 !new Matricula('matriculaAleModelado')
 !new Matricula('matriculaMariaAlgebra')
 !new Matricula('matriculaMariaCalculo')
-
-
 !ModeladoSW.creditos := 120
 !ModeladoSW.codigo := 308
 !RequisitosSW.creditos := 120
@@ -62,94 +45,74 @@ reset
 !AlgebraMatematicas.codigo := 105
 !CalculoMatematicas.creditos := 60
 !CalculoMatematicas.codigo := 308
-
-
 !new Titulo('Software')
 !new Titulo('Matematicas')
-
 !new EjemplarTitulo('EjemplarTituloSoftware')
-
-
---Asociaciones
-
-!insert(UMA, SoftwareTitulacion) into Pertenencia
-!insert(UPM, MatematicasTitulacion) into Pertenencia
-
-!insert (SoftwareTitulacion, ModeladoSW) into Formacion
-!insert (SoftwareTitulacion, RequisitosSW) into Formacion
-!insert (SoftwareTitulacion, RedesSW) into Formacion
-!insert (MatematicasTitulacion, AlgebraMatematicas) into Formacion
-!insert (MatematicasTitulacion, CalculoMatematicas) into Formacion
-
-
-
-!insert (matriculaOrtuModelado, ModeladoSW) into AsignaturasMatricula
-!insert (matriculaAleModelado, ModeladoSW) into AsignaturasMatricula
-!insert (matriculaOrtuRequisitos, RequisitosSW) into AsignaturasMatricula
-!insert (matriculaDavidRequisitos, RequisitosSW) into AsignaturasMatricula
-!insert (matriculaMariaCalculo, CalculoMatematicas) into AsignaturasMatricula
-!insert (matriculaMariaAlgebra, AlgebraMatematicas) into AsignaturasMatricula
-
-!insert (ModeladoSW, Antonio) into Ensenianza
-!insert (RequisitosSW, Gabriel) into Ensenianza
-!insert (RedesSW, Gabriel) into Ensenianza
-!insert (AlgebraMatematicas, Manoli) into Ensenianza
-!insert (CalculoMatematicas, Manoli) into Ensenianza
-
-
-!insert (matriculaOrtuModelado, Ortu) into Alumno
-!insert (matriculaOrtuRequisitos, Ortu) into Alumno
-!insert (matriculaAleModelado, Ale) into Alumno
-!insert (matriculaDavidRequisitos, David) into Alumno
-!insert (matriculaMariaCalculo, Maria) into Alumno
-!insert (matriculaMariaAlgebra, Maria) into Alumno
-
+!insert (UMA,SoftwareTitulacion) into Pertenencia
+!insert (UPM,MatematicasTitulacion) into Pertenencia
+!insert (SoftwareTitulacion,ModeladoSW) into Formacion
+!insert (SoftwareTitulacion,RequisitosSW) into Formacion
+!insert (SoftwareTitulacion,RedesSW) into Formacion
+!insert (MatematicasTitulacion,AlgebraMatematicas) into Formacion
+!insert (MatematicasTitulacion,CalculoMatematicas) into Formacion
+!insert (matriculaOrtuModelado,ModeladoSW) into AsignaturasMatricula
+!insert (matriculaAleModelado,ModeladoSW) into AsignaturasMatricula
+!insert (matriculaOrtuRequisitos,RequisitosSW) into AsignaturasMatricula
+!insert (matriculaDavidRequisitos,RequisitosSW) into AsignaturasMatricula
+!insert (matriculaMariaCalculo,CalculoMatematicas) into AsignaturasMatricula
+!insert (matriculaMariaAlgebra,AlgebraMatematicas) into AsignaturasMatricula
+!insert (ModeladoSW,Antonio) into Ensenianza
+!insert (RequisitosSW,Gabriel) into Ensenianza
+!insert (RedesSW,Gabriel) into Ensenianza
+!insert (AlgebraMatematicas,Manoli) into Ensenianza
+!insert (CalculoMatematicas,Manoli) into Ensenianza
+!insert (matriculaOrtuModelado,Ortu) into Alumno
+!insert (matriculaOrtuRequisitos,Ortu) into Alumno
+!insert (matriculaAleModelado,Ale) into Alumno
+!insert (matriculaDavidRequisitos,David) into Alumno
+!insert (matriculaMariaCalculo,Maria) into Alumno
+!insert (matriculaMariaAlgebra,Maria) into Alumno
 !matriculaOrtuModelado.nota := 9
 !matriculaOrtuModelado.fechaMatriculacion := 0
 !matriculaOrtuModelado.fechaAprobada := 3
-
 !matriculaOrtuRequisitos.nota := 6
 !matriculaOrtuRequisitos.fechaMatriculacion := 2
 !matriculaOrtuRequisitos.fechaAprobada := 4
-
 !matriculaDavidRequisitos.nota := 5
 !matriculaDavidRequisitos.fechaMatriculacion := 3
 !matriculaDavidRequisitos.fechaAprobada := 5
-
 !matriculaAleModelado.nota := 5
 !matriculaAleModelado.fechaMatriculacion := 3
 !matriculaAleModelado.fechaAprobada := 6
-
 !matriculaMariaCalculo.nota := 2
 !matriculaMariaCalculo.fechaMatriculacion := 4
 !matriculaMariaCalculo.fechaAprobada := 8
-
 !matriculaMariaAlgebra.nota := 2
 !matriculaMariaAlgebra.fechaMatriculacion := 4
 !matriculaMariaAlgebra.fechaAprobada := 10
-
-
-
-!insert (SoftwareTitulacion, Software) into Otorga
-!insert (MatematicasTitulacion, Matematicas) into Otorga
-
-!insert (Software, EjemplarTituloSoftware) into MaterializacionTitulo
-
-!insert (EjemplarTituloSoftware, Ortu) into Adquisicion
-
-
-
-!insert (UMA, Reloj) into Cronometracion
-!insert (UPM, Reloj) into Cronometracion
-
-
-!insert(Modelado, ModeladoSW) into MaterializacionAsignatura
-!insert(Requisitos, RequisitosSW) into MaterializacionAsignatura
-!insert(Redes, RedesSW) into MaterializacionAsignatura
-!insert(Calculo, CalculoMatematicas) into MaterializacionAsignatura
-!insert(Algebra, AlgebraMatematicas) into MaterializacionAsignatura
-
-
-
---Universidad.allInstances -> forAll(u | u.titulacion -> size() >= 
---(Persona.allInstances ->  select(p | p.titulo.titulo.nombreUniversidad -> includes(u.nombre))) -> size())
+!insert (SoftwareTitulacion,Software) into Otorga
+!insert (MatematicasTitulacion,Matematicas) into Otorga
+!insert (Software,EjemplarTituloSoftware) into MaterializacionTitulo
+!insert (EjemplarTituloSoftware,Ortu) into Adquisicion
+!insert (UMA,Reloj) into Cronometracion
+!insert (UPM,Reloj) into Cronometracion
+!insert (Modelado,ModeladoSW) into MaterializacionAsignatura
+!insert (Requisitos,RequisitosSW) into MaterializacionAsignatura
+!insert (Redes,RedesSW) into MaterializacionAsignatura
+!insert (Calculo,CalculoMatematicas) into MaterializacionAsignatura
+!insert (Algebra,AlgebraMatematicas) into MaterializacionAsignatura
+!new Posgrado('IATitulacion')
+!IATitulacion.numCursos := 1
+!IATitulacion.nombre := 'InteligenciaArtificial'
+!new Asignatura('DeepLearning')
+!new AsignaturaPropia('DeepLearningIA')
+!DeepLearningIA.creditos := 6
+!DeepLearningIA.codigo := 102
+!new Matricula('matriculaOrtuDeepLearningIA')
+!matriculaOrtuDeepLearningIA.fechaMatriculacion := 15
+!insert (DeepLearning,DeepLearningIA) into MaterializacionAsignatura
+!insert (DeepLearningIA,Manoli) into Ensenianza
+!insert (matriculaOrtuDeepLearningIA,DeepLearningIA) into AsignaturasMatricula
+!insert (matriculaOrtuDeepLearningIA,Ortu) into Alumno
+!insert (IATitulacion,DeepLearningIA) into Formacion
+!insert (UPM,IATitulacion) into Pertenencia
