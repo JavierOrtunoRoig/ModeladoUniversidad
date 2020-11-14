@@ -208,6 +208,12 @@ context Matricula inv fechaMatriculacionNotNull:
     Matricula.allInstances -> forAll(m | not m.fechaMatriculacion.oclIsUndefined())
 
 
+-- Solo puede haber un reloj en todo el sistema
+
+context Clock inv unReloj:
+    Clock.allInstances -> size () = 1
+
+
 
 
 
