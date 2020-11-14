@@ -9,14 +9,10 @@ reset
 !UCO.nombre := 'UCO'
 !UGR.nombre := 'UGR'
 
-!new Clock('reloj1')
-!new Clock('reloj2')
-!new Clock('reloj3')
-!new Clock('reloj4')
-!reloj1.time := 0
-!reloj2.time := 0
-!reloj3.time := 0
-!reloj4.time := 0
+!new Clock('Reloj')
+
+!Reloj.time := 0
+
 
 !new Persona('Alberto')
 !new Persona('Alvaro')
@@ -77,7 +73,7 @@ reset
 !ModeladoPropia.codigo := 303
 !EstadisticaPropia.codigo := 108
 !EstadisticaPropia.creditos := 6
-!BDPropia.codigo := 205
+!BDPropia.codigo := 105
 !BDPropia.creditos := 6
 !MatematicasEmpresarialesPropia.codigo := 203
 !MatematicasEmpresarialesPropia.creditos := 6
@@ -116,6 +112,9 @@ reset
 !insert(UCO, ITSS) into Pertenencia
 !insert(UGR, ADE) into Pertenencia
 
+!insert (UCA, Reloj) into Cronometracion
+!insert (UCO, Reloj) into Cronometracion
+!insert (UGR, Reloj) into Cronometracion
 
 !insert(IngenieriaSoftware, ModeladoPropia) into Formacion
 !insert(IngenieriaSoftware, POOPropia) into Formacion
@@ -123,7 +122,6 @@ reset
 !insert(IngenieriaComputadores, CalculoPropia) into Formacion
 !insert(IngenieriaComputadores, EstadisticaPropia) into Formacion
 !insert(ADE, MatematicasEmpresarialesPropia) into Formacion
-!insert(IA, ElectronicaPropia) into Formacion
 !insert(ITSS, BDPropia) into Formacion
 
 !insert(CalculoPropia, Yerai) into Ensenianza
@@ -141,6 +139,18 @@ reset
 !insert(Estadistica, EstadisticaPropia) into MaterializacionAsignatura
 !insert(BD, BDPropia) into MaterializacionAsignatura
 !insert(MatematicasEmpresariales, MatematicasEmpresarialesPropia) into MaterializacionAsignatura
+
+!insert (matriculaAlvaroPOO, POOPropia) into AsignaturasMatricula
+!insert (matriculaAnaBD, BDPropia) into AsignaturasMatricula
+!insert (matriculaIvanEstadistica, EstadisticaPropia) into AsignaturasMatricula
+!insert (matriculaDavidModelado, ModeladoPropia) into AsignaturasMatricula
+!insert (matriculaAlbertoCalculo, CalculoPropia) into AsignaturasMatricula
+!insert (matriculaRaulElectronica, ElectronicaPropia) into AsignaturasMatricula
+
+
+
+
+
 
 !insert(TituloIngenieriaSoftware, EjemplarTituloIngenieriaSoftware) into MaterializacionTitulo
 !insert(TituloIngenieriaElectrica, EjemplarTituloIngenieriaElectrica) into MaterializacionTitulo
@@ -173,9 +183,9 @@ reset
 !matriculaDavidModelado.fechaMatriculacion := 5
 !matriculaDavidModelado.fechaAprobada := 13
 
-!matriculaIvanEstadistica.nota
+!matriculaIvanEstadistica.nota := 2
 !matriculaIvanEstadistica.fechaMatriculacion := 7
-!matriculaIvanEstadistica.fechaAprobada
+
 
 !matriculaAnaBD.nota := 9
 !matriculaAnaBD.fechaMatriculacion := 9
